@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../css/assurance.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    </link>
+    <title>Assurance</title>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+                
+            </label>
+        <div class="logo">
+            <a href="">JavaScript</a>
+        </div>
+        <ul>
+            <li><a href="../../JustePrix/html/le juste prix.html">Le juste Prix</a></li>
+            <li><a href="../../Pendu/html/Pendu.html">Le pendu</a></li>
+            <li><a href="../../formulaire/html/formulaire.html">Formulaire</a></li>
+            <li><a href="../../Formulairesecurise/html/formulairesecu.html">Formulaire securisé</a></li>
+            <li><a href="../../Generasword/html/generasword.html">Generassword</a></li>
+            <li><a href="assurance.html" class="active">Assurance</a></li>
+            <li><a href="../../Mastermind/html/mastermind.html">Mastermind</a></li>
+        </ul>
+    </nav>
+
+    <div class="container_grid">
+        <h1 class="title">Assurance - exercice 6</h1>
+        <p class="rules">Calcul de prime d'assurance.</p>
+
+        <div class="container">
+            <form id="form" action="#" method="GET">
+                <div class="inputBox">
+
+                    <Label id="labelinput" for="age">Votre âge</Label>
+                    <input type="number" name="age" id="age_input" required autocomplete="off">
+
+                    <Label id="labelinput" for="permis">Année(s) de permis </Label>
+                    <input type="number" name="permis" id="permis_input" required autocomplete="off">
+
+                    <Label id="labelinput" for="accidents">Nbr(s) d'accident </Label>
+                    <input type="number" name="accidents" id="accidents_input" required autocomplete="off">
+
+                    <Label id="labelinput" for="assurance">Année(s) d'assurance</Label>
+                    <input type="number" name="assurance" id="assurance_input" required autocomplete="off">
+
+                    <div class="container_btn" onclick="calcul()">
+                        <div class="btn"><a href="#">Valider</a></div>
+                    </div>
+
+                </div>
+
+
+                <span id="text"></span>
+
+
+
+            </form>
+        </div>
+
+
+        <script src="../script/assurance.js"></script>
+</body>
+
+</html>

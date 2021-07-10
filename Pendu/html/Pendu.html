@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../css/stylependu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"></link>
+    <title>Le pendu</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>                
+        </label>
+        <div class="logo">
+            <a href="">JavaScript</a>
+        </div>
+
+        <ul>
+            <li><a href="../../JustePrix/html/le juste prix.html">Le juste Prix</a></li>
+            <li><a href="Pendu.html" class="active">Le pendu</a></li>
+            <li><a href="../../formulaire/html/formulaire.html">Formulaire</a></li>
+            <li><a href="../../Formulairesecurise/html/formulairesecu.html">Formulaire securisé</a></li>
+            <li><a href="../../Generasword/html/generasword.html">Generassword</a></li>
+            <li><a href="../../assurance/html/assurance.html">Assurance</a></li>
+            <li><a href="../../Mastermind/html/mastermind.html">Mastermind</a></li>
+        </ul>
+    </nav>
+
+    <div class="container_grid">
+        <h1 class="title">Le jeu du Pendu - exercice 2</h1>
+        <p class="rules">Devinez le mot!</p>
+
+
+        <div class="container">
+
+            <div class="vie">
+                <span id="erreurs">0</span> erreurs sur <span id="erreursMax">0</span>
+                <div>
+                    <img id="imgPendu" src="../Image/0.png" alt="">
+                    <p id="motADeviner">le mot à deviner ici</p>
+                    <div id="clavier"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio class="son" src="../../Assets/son.mp3"></audio>
+
+    <script src="../script/lependu2.js"></script>
+</body>
+
+</html>

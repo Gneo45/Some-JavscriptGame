@@ -1,0 +1,162 @@
+
+
+/*--------------------game---------------------------*/
+
+.container_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    justify-content: center;
+    justify-self: center;
+}
+
+
+
+
+.btnstart {
+    color: #5cdb95;
+    grid-column: 1/5;
+    justify-self: center;
+    margin: 20px;
+    border-radius: 10px;
+    height: 40px;
+    padding: 0 10px;
+    background-color: #303030;
+}
+.btnstart:hover {
+    background-color: #665f5f;
+}
+
+.btnstart:disabled {
+    display: none;
+}
+.container {
+   /* visibility: hidden;*/
+    grid-column: 1/5;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    height: 250px;
+    width: auto;
+    margin-top: 20px;
+    margin-bottom: -8px;
+}
+
+.container {
+    
+    grid-column: 1/5;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.btnalphabet{
+    width: 50px;
+    padding: 10px;
+    margin: 5px;  
+    margin-bottom: 20px;
+    font-weight: bold;
+       
+}
+
+#motADeviner{
+    grid-column: 2/4;
+    border: 2px solid black;
+    width: 500px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+   background-image: url(/Pendu/Image/wood.jpg);
+   margin-bottom: 30px;
+}
+.vie{
+    font-size: 2em;
+    margin: 10px;
+}
+
+.resetbtn {
+    
+    border-radius: 30px;
+    height: 30px;
+    margin-top: 20px;
+    width: 150px;
+    background-color: green;
+    color: #fff;
+    grid-column: 1/5;   
+    align-self: center; 
+    height: 40px;   
+    margin-top: 10px;     
+    width: 300px;
+    background: #292929;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-style: 18px;
+}
+
+
+
+@media screen and (max-width: 1500px) {
+  
+    
+    .container_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+    .title {
+        grid-column: 1/5;
+        font-size: 1.8em;
+        padding: 15px;
+        margin-top: 10px;
+    }
+    .vie{
+        font-size: 1.5em;
+        margin: 7px;
+    }
+
+    .btnalphabet{
+        width: 30px;
+        padding: 7px;
+        margin: 3px;  
+        margin-bottom: 10px;
+        font-weight: bold;
+           
+    }
+    
+
+}
+
+@media screen and (max-width: 720px){
+   
+    .title {
+        margin-top: 20px;
+        font-size: 1em;
+    }
+
+    .rules{
+        font-size: 1em;
+    }
+    img{
+
+        width: 150px;
+        height: auto;
+    }
+    #motADeviner{
+        grid-column: 2/4;
+        border: 2px solid black;
+        width: 400px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+       background-image: url(/Pendu/Image/wood.jpg);
+       margin-bottom: 30px;
+       font-size: 0.7em;
+    }
+
+}

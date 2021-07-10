@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang=fr>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../css/justeprix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css"></link>
+    <title>Le juste prix</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>                
+        </label>
+        <div class="logo">
+            <a href="">JavaScript</a>
+        </div>
+
+        <ul>
+            <li><a href="le juste prix.html" class="active">Le juste Prix</a></li>
+            <li><a href="../../Pendu/html/Pendu.html">Le pendu</a></li>
+            <li><a href="../../formulaire/html/formulaire.html">Formulaire</a></li>
+            <li><a href="../../Formulairesecurise/html/formulairesecu.html">Formulaire securisé</a></li>
+            <li><a href="../../Generasword/html/generasword.html">Generassword</a></li>
+            <li><a href="../../assurance/html/assurance.html">Assurance</a></li>
+            <li><a href="../../Mastermind/html/mastermind.html">Mastermind</a></li>
+        </ul>
+    </nav>
+
+    <!--end nav--------------------------------------------->
+
+    <div class="container_grid">
+
+        <h1 class="title">Le juste prix - exercice 1</h1>
+        <p class="rules">Vous avez 10 tentatives pour trouver le juste prix de cet objet!</p>
+        <!-----------------Boutton roulette-------------------------->
+        <div id="container_btn">
+            <div class="btn"><a href="#" id="boutton_roulette">Roulette</a></div>
+        </div>
+
+        <!-----------------Objet à trouver-------------------------->
+        <img src="" height="200px" />
+
+
+
+        <!-----------------formulaire jeuxr-------------------------->
+        <div class="form">
+
+            <input type="number" id="guessField" class="guessField" placeholder="Votre proposition de prix en €">
+            <input type="submit" value="Valider votre proposition " class="guessSubmit">
+        </div>
+
+        <!-----------------Indicateur jeux-------------------------->
+
+        <div class="resultParas">
+            <p class="guesses"></p>
+            <p class="lastResult"></p>
+            <p class="lowOrHi"></p>
+        </div>
+
+        <!-----------------Audio victoire-------------------------->
+        <audio class="son" src="../../Assets/son.mp3"></audio>
+
+
+        <script src="../script/Justeprix.js"></script>
+    </div>
+</body>
+
+</html>

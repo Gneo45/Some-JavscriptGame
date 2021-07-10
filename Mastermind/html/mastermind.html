@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../css/mastermind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    </link>
+    <title>Mastermind</title>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+                
+            </label>
+        <div class="logo">
+            <a href="">JavaScript</a>
+        </div>
+        <ul>
+            <li><a href="../../JustePrix/html/le juste prix.html">Le juste Prix</a></li>
+            <li><a href="../../Pendu/html/Pendu.html">Le pendu</a></li>
+            <li><a href="formulaire.html">Formulaire</a></li>
+            <li><a href="../../Formulairesecurise/html/formulairesecu.html">Formulaire securisé</a></li>
+            <li><a href="../../Generasword/html/generasword.html">Generassword</a></li>
+            <li><a href="../../assurance/html/assurance.html">Assurance</a></li>
+            <li><a href="mastermind.html" class="active">Mastermind</a></li>
+        </ul>
+    </nav>
+
+    <div class="container_grid">
+        <h1 class="title">Mastermind - Exercice 7</h1>
+        <p class="rules">Trouvez la bonne combinaison!</p>
+
+
+        <div id="container">
+
+
+            <div class="choices">
+                <div class="item orange"></div>
+                <div class="item yellow"></div>
+                <div class="item blue"></div>
+                <div class="item green"></div>
+            </div>
+            <p id="pSelect">Votre sélection</p>
+            <div class="selection"></div>
+            <p id="pHints">Indices</p>
+            <div class="hints"></div>
+        </div>
+    </div>
+
+    <script src="../script/mastermind.js"></script>
+</body>
+
+
+</html>

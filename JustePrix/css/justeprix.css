@@ -1,0 +1,224 @@
+.container_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+
+img {
+    height: 150px;
+    width: auto;
+    grid-column: 1/5;
+    justify-self: center;
+    visibility: hidden;
+    margin: 30px;
+    background: #000;
+}
+
+.form {
+    visibility: hidden;
+    grid-column: 1/5;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    grid-column: 1/5;
+    align-self: center;
+    height: 40px;
+    margin-top: 10px;
+    width: 300px;
+    background: #292929;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-style: 18px;
+}
+
+label {
+    font-size: 0.8em;
+    padding: 0px;
+    text-align: center;
+}
+
+.guessSubmit {
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    align-self: center;
+    background-color: #303030;
+    color: #5cdb95;
+}
+
+.guessSubmit:hover {
+    background-color: #665f5f;
+}
+
+.show {
+    visibility: visible;
+}
+
+.hidde {
+    visibility: hidden;
+}
+
+.lastResult {
+    color: #000;
+    padding: 3px;
+}
+
+.resetbtn {
+    border-radius: 30px;
+    height: 30px;
+    margin-top: 20px;
+    width: 150px;
+    background-color: green;
+    color: #fff;
+    grid-column: 1/5;
+    align-self: center;
+    height: 40px;
+    margin-top: 10px;
+    width: 300px;
+    background: #292929;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-style: 18px;
+}
+
+#container_btn {
+    grid-column: 1/5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+#container_btn .btn {
+    position: relative;
+    width: 155px;
+    height: 30px;
+    margin: 20px;
+}
+
+#container_btn .btn a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(15px);
+}
+
+#container_btn .btn:hover a {
+    letter-spacing: 3px;
+}
+
+#container_btn .btn a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+
+#container_btn .btn:hover a::before {
+    transform: skewX(45deg) translateX(200%);
+}
+
+#container_btn .btn::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -5px;
+    width: 30px;
+    height: 10px;
+    background: #1ebfff;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+#container_btn .btn:hover::before {
+    bottom: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+    box-shadow: 0 0 5px #1ebfff, 0 0 15px #1ebfff, 0 0 30px #1ebfff, 0 0 60px #1ebfff;
+}
+
+#container_btn .btn::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -5px;
+    width: 30px;
+    height: 10px;
+    background: #1ebfff;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+#container_btn .btn:hover::after {
+    top: 0;
+    height: 50%;
+    width: 80%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+    box-shadow: 0 0 5px #1ebfff, 0 0 15px #1ebfff, 0 0 30px #1ebfff, 0 0 60px #1ebfff;
+}
+
+.lastResult {
+    border-radius: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.resultParas {
+    grid-column: 1/5;
+    justify-self: center;
+}
+
+@media screen and (max-width: 1500px) {
+    .container_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+    img {
+        grid-column: 1/5;
+        margin: 10px;
+        width: auto;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 720px) {}

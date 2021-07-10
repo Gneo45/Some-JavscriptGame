@@ -1,0 +1,138 @@
+.container_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    justify-content: center;
+    justify-self: center;
+}
+
+#container {
+    grid-column: 1/5;
+    margin-top: 20px;
+    color: #fff;
+    background-color: rgba(44, 40, 45, 0.34);
+    border-radius: 15px;
+    justify-self: center;
+    width: 295px;
+    height: 450px;
+    backdrop-filter: blur(15px);
+    padding-top: 10px;
+    box-shadow: rgba(6, 2, 27, 0.25) 0px 54px 55px, rgba(8, 1, 73, 0.12) 0px -12px 30px, rgba(6, 0, 56, 0.12) 0px 4px 6px, rgba(4, 5, 110, 0.17) 0px 12px 13px, rgba(2, 90, 86, 0.09) 0px -3px 5px;
+}
+
+.item {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    border: 1px solid #000;
+    margin: 5px;
+}
+
+.selection-item {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    border: 1px solid #000;
+    margin: 5px;
+}
+
+.history-item {
+    grid-column: auto;
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    border: 1px solid #000;
+    margin: 5px;
+    white-space: nowrap;
+}
+
+.hints {
+    padding: 60px;
+    text-align: left;
+}
+
+.orange {
+    background-color: #FF5F1F;
+    box-shadow: rgba(255, 60, 0, 0.35) 0px 5px 15px;
+}
+
+.blue {
+    background-color: #15f4ee;
+    box-shadow: rgba(60, 0, 255, 0.35) 0px 5px 15px;
+}
+
+.green {
+    background-color: #08FF08;
+    box-shadow: rgba(4, 107, 0, 0.35) 0px 5px 15px;
+}
+
+.yellow {
+    background-color: #faed27;
+    box-shadow: rgba(253, 253, 244, 0.35) 0px 5px 15px;
+}
+
+.full {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 25px;
+    border: 1px solid #000;
+    box-shadow: rgba(90, 90, 90, 0.55) 0px 5px 15px;
+    margin: 1px;
+}
+
+.half {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: 1px solid #000;
+    box-shadow: rgba(78, 77, 77, 0.55) 0px 5px 15px;
+    margin: 1px;
+}
+
+.empty {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    margin: 1px;
+}
+
+#pHints {
+    font-size: 1em;
+}
+
+.show {
+    visibility: visible;
+}
+
+.hidde {
+    visibility: hidden;
+}
+
+.resetbtn {
+    border-radius: 30px;
+    height: 30px;
+    margin-top: 20px;
+    width: 150px;
+    background-color: green;
+    color: #fff;
+    grid-column: 1/5;
+    align-self: center;
+    height: 40px;
+    margin-top: 10px;
+    width: 300px;
+    background: #292929;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-style: 18px;
+}
